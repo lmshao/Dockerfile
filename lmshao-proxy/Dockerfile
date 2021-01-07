@@ -7,7 +7,7 @@ FROM ubuntu:18.04
 MAINTAINER LimingSHAO <lmshao@163.com>
 
 # Update the system
-RUN apt-get update && apt install -y shadowsocks polipo
+RUN apt-get update && apt install -y shadowsocks polipo libsodium-dev
 
 ENV SS_SERVER_HOST= \
     SS_SERVER_PORT= \
